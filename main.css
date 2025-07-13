@@ -55,7 +55,7 @@ h1 {
 }
 
 .card-roll {
-  animation: flip 1s ease-in-out forwards;
+  animation: flip 0.2s ease-in-out forwards;
 }
 
 @keyframes flip {
@@ -69,7 +69,7 @@ h1 {
 }
 
 .card-turn {
-  animation: turn 1s ease-in-out forwards;
+  animation: turn 0.2s ease-in-out forwards;
 }
 
 @keyframes turn {
