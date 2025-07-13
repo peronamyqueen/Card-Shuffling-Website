@@ -39,7 +39,7 @@ const assignCard = async (card, index, randomArray) => {
     card.classList.add("card-roll");
     await delay(CARD_ANIMATION_DURATION);
     card.classList.remove("card-roll");
-    card.src = `/resources/imgs/${randomArray[index]}.svg`;
+    card.src = `resources/imgs/${randomArray[index]}.svg`;
     card.classList.add("card-turn");
     await delay(CARD_ANIMATION_DURATION);
     card.classList.remove("card-turn");
@@ -50,9 +50,9 @@ const assignCard = async (card, index, randomArray) => {
  */
 const handleShuffle = async () => {
     const randomArray = generateRandomArray();
-    elements.shuffleImg.src = "/resources/shuffle.gif";
+    elements.shuffleImg.src = "resources/shuffle.gif";
     await delay(SHUFFLE_ANIMATION_DURATION);
-    elements.shuffleImg.src = "/resources/idle.gif";
+    elements.shuffleImg.src = "resources/idle.gif";
     elements.cards.forEach((card, index) => assignCard(card, index, randomArray));
 };
 
